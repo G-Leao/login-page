@@ -1,9 +1,10 @@
-
+ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("dados");
     const senha = document.getElementById("senha");
+    const btn = document.getElementById("btnLogin");
 
-    function login() {
-        if (email.value === "" || senha.value === "") {
+    btn.addEventListener("click", () => {
+        if (email.value.trim() === "" || senha.value.trim() === "") {
             alert("Preencha todos os campos!");
             return;
         }
@@ -14,6 +15,6 @@
         }
 
         alert("Login realizado com sucesso!");
-        // Aqui você pode redirecionar:
-        // window.location.href = "home.html";
-    }
+    });
+});
+
