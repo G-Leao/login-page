@@ -13,13 +13,21 @@ i{
     padding: 22px;
     background: linear-gradient(135deg, #1e1e2f, #2b2b45);
     margin-top: 35px;
+    box-shadow: 1px 1px 2px #00ffd5;
+}
+
+i:hover{
+     transform: scale(1.2);
+     transition: transform 0.3s, color 0.3s;
+     box-shadow: 3px 0px 1px #00ffd5;
+     transition: 0.2s ease-in-out;
 }
 
 
 main {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
-    padding: 40px;
+    padding: 50px;
     border-radius: 12px;
     width: 100%;
     max-width: 380px;
@@ -39,13 +47,19 @@ main h1 {
     }
 
 main input {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 8px;
     border: none;
     outline: none;
     font-size: 14px;
+}
+
+input:hover{
+    border-radius: 1.3em;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 2px#00ffc8;
 }
 
 main input:focus {
@@ -64,3 +78,12 @@ button {
     color: #000;
     transition: background 0.3s;
 }
+
+    button:hover{
+         transform: scale(1.2s);
+         background-color: #00a6ff;
+         box-shadow: 0px 0px 5px #fff;
+        border-radius: 5em;
+         transition: 0.2s ease-in-out;
+         color: #fff;
+    }
