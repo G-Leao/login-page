@@ -1,36 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forgot</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperar Senha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="forgot.css" />
+  </head>
+  <body>
+    <div class="particles"></div>
 
-    <link rel="stylesheet" href="forgot.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
     <header>
-            <i class="fa-solid fa-lock"></i>
-
+      <div class="lock-icon">
+        <i class="fa-solid fa-lock"></i>
+      </div>
     </header>
+
     <main>
-        <h1>Esqueceu a senha?</h1>
-        <h2>Não se preocupe, vamos Recuperar :)</h2>
+      <h1>Esqueceu a senha?</h1>
+      <p class="subtitle">Não se preocupe, vamos recuperar :)</p>
 
-        <input type="email" id="dados" placeholder="digite e-mail ou Nome de usuario">
-        <input type="password" id="senha" placeholder="digite a nova senha">
-        <input type="password" id="senha" placeholder="digite a nova senha novamente">
+      <input type="email" id="dados" placeholder="E-mail ou nome de usuário" />
+      <input type="password" id="senha" placeholder="Digite a nova senha" />
+      <input
+        type="password"
+        id="confirmar-senha"
+        placeholder="Confirme a nova senha"
+      />
 
-        <button id="btnforgot">Entrar</button>
+      <button id="btnforgot">Redefinir Senha</button>
 
+      <a href="index.html" id="back-link">Voltar ao login</a>
     </main>
 
-    <script src="forgot.js"></script>
+    <footer>
+      <p>DEV.LEAO &copy; Todos os direitos reservados</p>
+    </footer>
 
-    </body>
+    <script src="forgot.js"></script>
+  </body>
 </html>
